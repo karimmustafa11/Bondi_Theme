@@ -1,0 +1,48 @@
+:root {
+    --primary-color: #19283f;
+    --button-background: #ff3150;
+    --button-text: #ffc400;
+    --green-light: #33d1cc;
+}
+
+header {
+    width: 100%;
+    padding: 20px 0px;
+}
+
+.button-background-orange {
+    background-color: #ff3150;
+}
+
+.button-text-yellow {
+    color: #ffc400;
+}
+
+.color-blue-dark {
+    background-color: #19283f;
+}
+
+
+.search {
+    border-left: 1px solid var(--green-light);
+    height: fit-content;
+    padding: 0px 12px;
+
+
+}
+
+.login-button {
+    padding: 10px 19px;
+    border-radius: 34px;
+    text-decoration: none;
+}
+
+.search-icon {
+    width: 25px;
+    height: 25px;
+    vertical-align: top;
+}
+
+.active {
+    color: #33d1cc;
+}
