@@ -271,3 +271,7 @@ header {
 .about-p {
     width: 500px;
 }
+
+.bg-green-light {
+    background-color: var(--green-light);
+}
