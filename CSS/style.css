@@ -267,3 +267,7 @@ header {
     opacity: 1;
     filter: alpha(opacity=100);
 }
+
+.about-p {
+    width: 500px;
+}
