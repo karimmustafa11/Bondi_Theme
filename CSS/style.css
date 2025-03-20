@@ -4,12 +4,32 @@
     --button-text: #ffc400;
     --green-light: #33d1cc;
     --section-color: #eff7fa;
+    --yellow-color: #ffc400;
+}
+
+.text-yellow {
+    color: var(--yellow-color);
+}
+
+.bg-yellow {
+    background-color: var(--button-text);
+}
+
+
+.text-blue {
+    color: var(--primary-color);
 }
 
 header {
     width: 100%;
     padding: 20px 0px;
 }
+
+/* buttons */
+.button-background-blue {
+    background-color: var(--primary-color);
+}
+
 
 .button-background-orange {
     background-color: #ff3150;
@@ -19,9 +39,20 @@ header {
     color: #ffc400;
 }
 
+.login-button,
+.form-button,
+.want-more-button {
+    padding: 10px 19px;
+    border-radius: 34px;
+    text-decoration: none;
+}
+
+/* .......................................... */
+
 .color-blue-dark {
     background-color: #19283f;
 }
+
 
 
 .search {
@@ -32,12 +63,26 @@ header {
 
 }
 
-.login-button,
-.want-more-button {
-    padding: 10px 19px;
-    border-radius: 34px;
-    text-decoration: none;
+.Subscribe-section input {
+    border: none;
+    background-color: transparent;
+    outline: none;
 }
+
+.Subscribe-section input::placeholder {
+    color: white;
+    font-weight: bolder;
+}
+
+.Subscribe-section .input-div {
+    border-bottom: 1px solid white;
+
+}
+
+.Subscribe-section h5 {
+    font-weight: 900;
+}
+
 
 .get-started-button {
     padding: 10px 19px;
