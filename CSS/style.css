@@ -7,23 +7,43 @@
     --yellow-color: #ffc400;
 }
 
-.text-yellow {
-    color: var(--yellow-color);
+header {
+    width: 100%;
+    padding: 20px 0px;
 }
+
+/* yellow */
 
 .bg-yellow {
     background-color: var(--button-text);
 }
 
+.button-text-yellow,
+.text-yellow {
+    color: var(--button-text);
+}
+
+.text-green-light {
+    color: var(--green-light);
+}
+
+
+
+/* ................... */
+
+
+
+/* blue */
 
 .text-blue {
     color: var(--primary-color);
 }
 
-header {
-    width: 100%;
-    padding: 20px 0px;
+.color-blue-dark {
+    background-color: var(--primary-color);
 }
+
+
 
 /* buttons */
 .button-background-blue {
@@ -35,9 +55,7 @@ header {
     background-color: #ff3150;
 }
 
-.button-text-yellow {
-    color: #ffc400;
-}
+
 
 .login-button,
 .form-button,
@@ -49,9 +67,7 @@ header {
 
 /* .......................................... */
 
-.color-blue-dark {
-    background-color: #19283f;
-}
+
 
 
 
@@ -67,6 +83,7 @@ header {
     border: none;
     background-color: transparent;
     outline: none;
+    caret-color: white;
 }
 
 .Subscribe-section input::placeholder {
