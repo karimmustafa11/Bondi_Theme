@@ -346,3 +346,7 @@ header {
 .bg-green-light {
     background-color: var(--green-light);
 }
+
+.footer-email {
+    word-break: break-all;
+}
