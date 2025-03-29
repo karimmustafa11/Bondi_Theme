@@ -79,6 +79,11 @@ header {
 
 }
 
+.search-div {
+    padding: 0px 10px;
+    border-left: 1px solid var(--green-light);
+}
+
 .Subscribe-section input {
     border: none;
     background-color: transparent;
@@ -114,7 +119,7 @@ header {
 }
 
 .active {
-    color: #33d1cc;
+    color: #33d1cc !important;
 }
 
 .taste-the-creativity {
@@ -124,6 +129,10 @@ header {
 
 .section-bg {
     background-color: var(--section-color);
+}
+
+.active {
+    color: var(--green-light);
 }
 
 

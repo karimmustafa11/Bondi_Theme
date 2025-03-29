@@ -4,94 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Sidenav with Categories</title>
-    <!-- MDB CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.2.0/mdb.min.css" rel="stylesheet" />
+    <title>Document</title>
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
-    <style>
-        .sidenav[data-mdb-hidden="true"] {
-            transform: translateX(-100%);
-        }
-    </style>
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.2.0/mdb.min.css" rel="stylesheet" />
 </head>
 
 <body>
-    <!-- Sidenav -->
-    <nav id="sidenav-1" class="sidenav" data-mdb-hidden="true" data-mdb-sidenav-init>
-        <ul class="sidenav-menu">
-            <!-- Link 1 -->
-            <li class="sidenav-item">
-                <a class="sidenav-link" href="#">
-                    <i class="far fa-smile pe-3"></i>Link 1
-                </a>
-            </li>
 
-            <!-- Category 1 -->
-            <li class="sidenav-item">
-                <a class="sidenav-link" data-mdb-toggle="collapse" data-mdb-target="#category-1" aria-expanded="false"
-                    aria-controls="category-1">
-                    <i class="far fa-smile pe-3"></i>Category 1
-                    <i class="fas fa-chevron-down ms-auto"></i>
-                </a>
-                <div class="sidenav-collapse" id="category-1">
-                    <ul class="sidenav-menu">
-                        <li class="sidenav-item">
-                            <a class="sidenav-link" href="#">Link 2</a>
-                        </li>
-                        <li class="sidenav-item">
-                            <a class="sidenav-link" href="#">Link 3</a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
 
-            <!-- Category 2 -->
-            <li class="sidenav-item">
-                <a class="sidenav-link" data-mdb-toggle="collapse" data-mdb-target="#category-2" aria-expanded="false"
-                    aria-controls="category-2">
-                    <i class="far fa-smile pe-3"></i>Category 2
-                    <i class="fas fa-chevron-down ms-auto"></i>
-                </a>
-                <div class="sidenav-collapse" id="category-2">
-                    <ul class="sidenav-menu">
-                        <li class="sidenav-item">
-                            <a class="sidenav-link" href="#">Link 4</a>
-                        </li>
-                        <li class="sidenav-item">
-                            <a class="sidenav-link" href="#">Link 5</a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-        </ul>
-    </nav>
 
-    <button class="btn btn-primary" data-mdb-toggle="sidenav" data-mdb-target="#sidenav-1" aria-controls="sidenav-1"
-        aria-expanded="false">
-        <i class="fas fa-bars"></i>
-    </button>
+    <div class="d-flex justify-content-center align-items-center flex-column">
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <button data-mdb-button-init class="navbar-toggler" type="button" data-mdb-collapse-init
+                    data-mdb-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-body-tertiary shadow-3 p-4">
+                <button data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-block border-bottom m-0">Link
+                    1</button>
+                <button data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-block border-bottom m-0">Link
+                    2</button>
+                <button data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-block m-0">Link
+                    3</button>
+            </div>
+        </div>
+    </div>
 
-    <!-- MDB JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.2.0/mdb.umd.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const sidenav = document.getElementById('sidenav-1');
-            const sidenavInstance = new mdb.Sidenav(sidenav, { hidden: true });
+   
 
-            document.querySelectorAll('.sidenav-link[data-mdb-toggle="collapse"]').forEach(link => {
-                const targetId = link.getAttribute('data-mdb-target');
-                const collapseElement = document.querySelector(targetId);
-                const collapseInstance = new mdb.Collapse(collapseElement, { toggle: false });
 
-                link.addEventListener('click', () => {
-                    collapseInstance.toggle();
-                });
-            });
-        });
-    </script>
+    <!-- MDB -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.2.0/mdb.umd.min.js"></script>
 </body>
 
 </html>
